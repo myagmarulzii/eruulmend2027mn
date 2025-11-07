@@ -1,59 +1,204 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏥 Эрүүл мэндийг дэмжих жил 2027
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Монгол улс 2027 оныг **"Эрүүл мэндийг дэмжих жил"** болгон зарласан. Энэхүү төсөл нь эмч, эмнэлгийн ажилчдаас санал хүсэлт цуглуулах Laravel дээр суурилсан веб аппликейшн юм.
 
-## About Laravel
+## 🎯 Төслийн зорилго
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Эрүүл мэндийн салбарын мэргэжилтнүүдээс дараах чиглэлээр санал хүсэлт хүлээн авах:
+- 💰 Цалин урамшуулал
+- 📚 Хүний нөөцийн сургалт хөгжил
+- 💻 Цахим ба Эрүүл мэндийн өгөгдөл
+- 🏥 Эрүүл мэндийн даатгал
+- 👥 Нийгмийн эрүүл мэнд
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Боломжууд
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Үндсэн хуудсууд
+1. **Нүүр хуудас** - Санал хүсэлт илгээх форм
+2. **Статистик** - Төрөл бүрээр ирсэн саналын тоог харуулах
+3. **Холбоо барих** - Байгууллагын холбоо барих мэдээлэл
+4. **ТББ-д элсэх** - Эрүүл мэнд хөгжлийн зуун ТББ-д гишүүнээр элсэх мэдээлэл
 
-## Learning Laravel
+### Техникийн шийдэл
+- ✅ Laravel 12.x PHP Framework
+- ✅ MySQL database
+- ✅ Responsive дизайн (утас, таблет, компьютер)
+- ✅ Form validation
+- ✅ Gradient дизайн, өнгөлөг интерфейс
+- ✅ Санал хүсэлтийн төрөл бүрээр статистик
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Суулгах заавар
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Шаардлагатай
 
-## Laravel Sponsors
+- PHP >= 8.4
+- Composer
+- MySQL 5.7+ эсвэл MariaDB
+- Node.js & NPM (хэрэв frontend asset compile хийх бол)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Алхам 1: Төслийг татаж авах
 
-### Premium Partners
+```bash
+git clone https://github.com/myagmarulzii/eruulmend2027mn.git
+cd eruulmend2027mn
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Алхам 2: Dependencies суулгах
 
-## Contributing
+```bash
+composer install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Алхам 3: Environment тохируулах
 
-## Code of Conduct
+```bash
+cp .env.example .env
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+`.env` файлд database холболтыг тохируулна уу:
 
-## Security Vulnerabilities
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=eruulmend2027
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Алхам 4: Application key үүсгэх
 
-## License
+```bash
+php artisan key:generate
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Алхам 5: Database үүсгэх
+
+MySQL-д database үүсгэнэ:
+
+```sql
+CREATE DATABASE eruulmend2027 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+### Алхам 6: Migration ажиллуулах
+
+```bash
+php artisan migrate
+```
+
+### Алхам 7: Storage symbolic link үүсгэх
+
+```bash
+php artisan storage:link
+```
+
+### Алхам 8: Development server ажиллуулах
+
+```bash
+php artisan serve
+```
+
+Аппликейшн `http://localhost:8000` хаяг дээр ажиллаж эхлэнэ.
+
+## 📋 Өгөгдлийн бүтэц
+
+### Suggestions Table
+
+| Column | Type | Description |
+|--------|------|-------------|
+| id | BIGINT | Үндсэн түлхүүр |
+| name | VARCHAR(255) | Эмчийн нэр |
+| email | VARCHAR(255) | Имэйл хаяг |
+| phone | VARCHAR(20) | Утасны дугаар |
+| position | VARCHAR(255) | Албан тушаал |
+| category | VARCHAR(255) | Саналын төрөл |
+| suggestion | TEXT | Санал хүсэлт |
+| created_at | TIMESTAMP | Үүсгэсэн огноо |
+| updated_at | TIMESTAMP | Шинэчилсэн огноо |
+
+## 🎨 Дизайн
+
+Төсөл нь gradient өнгөт дизайн ашигласан:
+- Үндсэн өнгө: Purple-Blue gradient (#667eea → #764ba2)
+- Responsive байдлаар бүх төхөөрөмж дээр сайн харагдана
+- Хэрэглэгчид ээлтэй интерфейс
+- "🏥 Эрүүл мэндийг дэмжих жил 2027" лого бүхий header
+
+## 🔒 Аюулгүй байдал
+
+- CSRF хамгаалалт бүх форм дээр
+- Input validation
+- SQL injection эсрэг хамгаалалт (Eloquent ORM ашигласан)
+- XSS эсрэг хамгаалалт (Blade templating)
+
+## 📱 Харагдах байдал
+
+Төсөл нь бүх төхөөрөмж дээр сайн ажиллана:
+- 💻 Desktop computers
+- 📱 Mobile phones
+- 📲 Tablets
+
+## 🛠️ Хөгжүүлэлт
+
+### Кодын бүтэц
+
+```
+app/
+├── Http/
+│   └── Controllers/
+│       └── SuggestionController.php
+├── Models/
+│   └── Suggestion.php
+database/
+├── migrations/
+│   └── 2025_11_07_121402_create_suggestions_table.php
+resources/
+├── views/
+│   ├── layout.blade.php
+│   ├── home.blade.php
+│   ├── statistics.blade.php
+│   ├── contact.blade.php
+│   └── membership.blade.php
+routes/
+└── web.php
+```
+
+### Routes
+
+| Method | URI | Name | Description |
+|--------|-----|------|-------------|
+| GET | / | home | Нүүр хуудас |
+| POST | /suggestion | suggestion.store | Санал хадгалах |
+| GET | /statistics | statistics | Статистик харах |
+| GET | /contact | contact | Холбоо барих |
+| GET | /membership | membership | ТББ-д элсэх |
+
+## 🤝 Хувь нэмэр оруулах
+
+Төсөлд хувь нэмэр оруулахыг хүсвэл:
+
+1. Fork хийнэ
+2. Feature branch үүсгэнэ (`git checkout -b feature/AmazingFeature`)
+3. Өөрчлөлтөө commit хийнэ (`git commit -m 'Add some AmazingFeature'`)
+4. Branch руугаа push хийнэ (`git push origin feature/AmazingFeature`)
+5. Pull Request үүсгэнэ
+
+## 📄 License
+
+Энэхүү төсөл нь MIT license-ийн дагуу нээлттэй эхтэй.
+
+## 📞 Холбоо барих
+
+Асуулт, санал хүсэлт байвал:
+- 📧 Email: info@health2027.mn
+- 🌐 Website: [http://localhost:8000](http://localhost:8000)
+
+## 🙏 Талархал
+
+- Laravel Framework
+- Монгол Улсын Эрүүл мэндийн яам
+- Эрүүл мэндийн салбарын бүх ажилчид
+
+---
+
+**Эрүүл мэндийг дэмжих жил 2027** 🏥 © 2025
